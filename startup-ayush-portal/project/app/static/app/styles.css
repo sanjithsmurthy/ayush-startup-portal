@@ -13,7 +13,7 @@ body {
     width: 100%;
     overflow: hidden;
     margin-top: 1.5rem;
-  }
+}
 #image-size-1 {
     width:7rem;
     height:3rem;
@@ -85,12 +85,29 @@ body {
     list-style: none;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .releStake>li {
     background: url(./tie.png) no-repeat;
     background-size: contain;
     padding-left: 1.5rem;
+}
+
+.releInd {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.releInd>li {
+    background: url(./industry.png) no-repeat;
+    background-size: contain;
+    padding-left: 1.5rem;
+    flex: 0 0 25%;
 }
 
 .Stake_Industry{

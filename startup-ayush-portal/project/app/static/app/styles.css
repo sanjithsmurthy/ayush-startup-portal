@@ -20,6 +20,35 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.head {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+.links>a:hover {
+    color: #00EDB4;
+    
+}
+.links>a {
+    color: white;
+    text-decoration: none;
+    text-decoration: dotted;
+}
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+}
 /* #follow-section {
     width: 5.875rem;
     height: 1.5rem;

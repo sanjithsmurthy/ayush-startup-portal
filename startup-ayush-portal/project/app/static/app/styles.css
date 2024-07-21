@@ -79,7 +79,24 @@ body {
     margin: 1.563rem 3.125rem 0 3.125rem;
     padding: 3.125rem 6.25rem 0 6.25rem;        
 }
+.releStake  {
+    
+  display: flex;
+  background-color: white;
 
+}
+ 
+.Stake_Industry{
+    margin: 1.563rem 3.125rem 0 3.125rem;
+    padding: 3.125rem 6.25rem 0 6.25rem
+ }
+.releStake > div {
+    background-color: white;
+    margin: 3rem 5rem 5rem 0rem;
+    padding: 0rem;
+    font-size: 25px;
+
+  }
 /* #follow-section {
     width: 5.875rem;
     height: 1.5rem;

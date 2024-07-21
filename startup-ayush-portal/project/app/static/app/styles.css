@@ -79,25 +79,25 @@ body {
     margin: 1.563rem 3.125rem 0 3.125rem;
     padding: 3.125rem 6.25rem 0 6.25rem;        
 }
-.releStake  {
-    
-  display: flex;
-  background-color: white;
 
+.releStake  {    
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
 }
- 
+
+.releStake>li {
+    background: url(./tie.png) no-repeat;
+    background-size: contain;
+    padding-left: 1.5rem;
+}
+
 .Stake_Industry{
     margin: 1.563rem 3.125rem 0 3.125rem;
     padding: 3.125rem 6.25rem 0 6.25rem
- }
-.releStake > div {
-    background-color: white;
-    margin: 1.5rem 5rem 4rem 0rem;
-    padding: 0rem;
-    font-size: 20px;
-    font-weight:350;
+}
 
-  }
 /* #follow-section {
     width: 5.875rem;
     height: 1.5rem;

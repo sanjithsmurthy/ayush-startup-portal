@@ -8,9 +8,75 @@
     {% load static %}
     <link rel="shortcut icon" href="{% static 'app/favicon.png' %}" type="image/x-icon">
 
+    <!-- css stylesheets -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app/styles.css' %}">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Startup Ayush</title>
+    <style>
+        
+        .head {
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        
+        .links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .links>a:hover {
+            color: #00EDB4;
+            
+        }
+        .links>a {
+            color: white;
+            text-decoration: none;
+            text-decoration: dotted;
+        }
+        .logos {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Ayush</h1>
+    <header>
+        <!-- header top -->
+        <div class="header-top">
+            <div class="head">
+                <div class="logos">
+                    {% load static %}
+                    <img src="{% static 'app/Gov of IND.png' %}" id="image-size-1" alt="Government of India">
+                    <img src="{% static 'app/MOCAI.png' %}" id="image-size-2" alt="Indian Ministry Of Industry and Commerece">
+                </div>
+                <div class="links">
+                        <a href="#home">home</a>
+                        <a href="#about">about</a>
+                        <a href="#contact">contact</a>
+                        <a href="#login">login</a>
+                </div>
+                <div class="logos">
+                    {% load static %}
+                    <img src="{% static 'app/startup_india.png' %}" alt="Startup India">
+                    <img src="{% static 'app/azadi_ka_amrit_mahotsav.png' %}" alt="MSME">
+                </div>
+            </div>
+        </div>
+        <!-- header bottom -->
+        <div class="header-bottom">
+
+        </div>
+    </header>
 </body>
 </html>

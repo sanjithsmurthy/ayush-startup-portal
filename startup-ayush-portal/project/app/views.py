@@ -15,3 +15,7 @@ def index(request):
 def animation_view(request):
     animation = Animation.objects.first()  # Simplified for example
     return render(request, 'animation_template.html', {'animation': animation}
+                  
+def login(request):
+    return render(request, 'app/login.html')
+```

@@ -1,12 +1,19 @@
 body {
     font-family: Montserrat !important;
     margin:0;
+
 }
 .header-top {
     background-color: white;
     padding: 0.5rem 0;
     position: relative;
 }
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1.5rem;
+  }
 #image-size-1 {
     width:7rem;
     height:3rem;
@@ -40,7 +47,7 @@ body {
 .head {
     display: flex;
     justify-content: space-around;
-    margin: 0;
+    margin-top: 2rem;
     padding: 0;
     background-color: white;
 }
@@ -68,7 +75,7 @@ body {
     gap: 1.5rem;
 }
 
-.introduction {
+.intro_pro {
     margin: 1.563rem 3.125rem 0 3.125rem;
     padding: 3.125rem 6.25rem 0 6.25rem;        
 }

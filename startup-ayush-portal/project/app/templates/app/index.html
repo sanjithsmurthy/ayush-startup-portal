@@ -44,8 +44,8 @@
             <div class="head">
                 <div class="logos">
                     {% load static %}
-                    <img src="{% static 'app/Gov of IND.png' %}" id="image-size-1" alt="Government of India">
-                    <img src="{% static 'app/MOCAI.png' %}" id="image-size-2" alt="Indian Ministry Of Industry and Commerece">
+                    <img src="{% static 'app/Ministry-of-AYUSH.png' %}" id="image-size-1" alt="Government of India">
+                    <img src="{% static 'app/ayush.png' %}" id="image-size-2" alt="Indian Ministry Of Industry and Commerece">
                 </div>
                 <div class="links">
                         <a href="#home">home</a>
@@ -57,33 +57,47 @@
                     {% load static %}
                     <img src="{% static 'app/startup_india.png' %}" alt="Startup India">
                     <img src="{% static 'app/azadi_ka_amrit_mahotsav.png' %}" alt="MSME">
+                    
                 </div>
             </div>
+            <div class="gear_size">
+                {% load static %}
+                <img src="{% static 'app/Gear_2.gif' %}" alt="gears">
+            </div>
+            {% comment %} <div class="chakra">
+                {% load static %}
+                <img src="{% static 'app/chakra.gif' %}" alt="ashoka chakra">
+            </div> {% endcomment %}
         </div>
     </header>
-    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-inner">
-            {% load static %}
-            <div class="carousel-item active">
-                <img src="{% static 'app/c1.png' %}" class="d-block w-100" alt="...">
+    <!--carousel-->
+    <div>
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                {% load static %}
+                <div class="carousel-item active">
+                    <img src="{% static 'app/c1.png' %}" class="d-block w-100" alt="...">
+                </div>
+                {% load static %}
+                <div class="carousel-item">
+                    <img src="{% static 'app/c2.png' %}" class="d-block w-100" alt="...">
+                </div>
+                {% load static %}
+                <div class="carousel-item">
+                    <img src="{% static 'app/c3.png' %}" class="d-block w-100" alt="...">
+                </div>
             </div>
-            {% load static %}
-            <div class="carousel-item">
-                <img src="{% static 'app/c2.png' %}" class="d-block w-100" alt="...">
-            </div>
-            {% load static %}
-            <div class="carousel-item">
-                <img src="{% static 'app/c3.png' %}" class="d-block w-100" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
+    <!--Content-->
+    
 </body>
 </html>

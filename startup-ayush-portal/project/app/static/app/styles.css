@@ -57,8 +57,9 @@ body {
 }
 .links>a {
     color: black;
-    text-decoration: none;
-    text-decoration: dotted;
+    font-size: 1.2rem;
+    text-decoration:dashed;
+    font-weight:550;
 }
 .logos {
     display: flex;
@@ -66,6 +67,12 @@ body {
     align-items: center;
     gap: 1.5rem;
 }
+
+.introduction {
+    margin: 1.563rem 3.125rem 0 3.125rem;
+    padding: 3.125rem 6.25rem 0 6.25rem;        
+}
+
 /* #follow-section {
     width: 5.875rem;
     height: 1.5rem;

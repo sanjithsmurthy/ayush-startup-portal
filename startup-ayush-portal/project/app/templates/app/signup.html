@@ -28,8 +28,8 @@
 <body>
     <header>
         <!-- header top -->
-        <div class="header-top">
-            <div class="head">
+        <div class="signup-header-bottom" id="signup-header-top">
+            <div id="signup-header">
                 <div class="logos">
                     {% load static %}
                     <img src="{% static 'app/ministry-of-ayush.png' %}" id="image-size-1" alt="government of india">
@@ -37,10 +37,9 @@
                         alt="indian ministry of industry and commerece">
                 </div>
                 <div class="links">
-                    <a href="/home">home</a>
+                    <a href="/">home</a>
                     <a href="/about">about</a>
                     <a href="/contact">contact</a>
-                    <a href="/signup">login</a>
                 </div>
                 <div class="logos">
                     {% load static %}
@@ -55,43 +54,75 @@
             </div>
         </div>
     </header>
-    <form action="/signup/" method="post">
-        {% csrf_token %}
-        <label for="username"></label>
-        username <input type="text" id="username" name="username" placeholder="(only letters and numbers)" required>
-        <br><br>
 
-        <label for="fname"></label>
-        first name <input type="text" id="fname" name="fname" placeholder="(enter your first name)" required>
-        <br><br>
 
-        <label for="lname"></label>
-        last name <input type="text" id="lname" name="lname" placeholder="(enter your last name)" required>
-        <br><br>
+    <div class="form-container">
+        <h1 class="text-center margin-between">Sign Up</h1>
+        <form action="/signup/" method="post">
+            {% csrf_token %}
+            <div class="signup-container">
+                <div class="signup-border">
+                    <div class="signup">
 
-        <label for="email"></label>
-        email <input type="email" id="email" name="email" placeholder="(enter your email address)" required>
-        <br><br>
-
-        <label for="pass1"></label>
-        password <input type="password" id="pass1" name="pass1" placeholder="(create a password)" required>
-        <br><br>
-
-        <label for="pass2"></label>
-        enter your password again <input type="password" id="pass2" name="pass2" placeholder="(confirm your password)"
-            required>
-        <br><br>
-
-        <button type="submit">create account</button>
-
-    </form>
-    <div class="social">
-        <h4 class="icons">signup with your social accounts</h4>
-        <a href="">
-            {% load static %} <img type="image" src=" {% static 'app/googleicon.png' %}" width="30"></a>
-
-        <h5 class="icons">already have an account?</h5>
-        <h3><a href="/signin">login here</a></h3>
+                        <div><label for="username"></label>
+                            <h5>username</h5>
+                        </div>
+                        <div><input type="text" id="username" name="username" placeholder="(only letters and numbers)"
+                                required>
+                        </div>
+                        <div><label for="fname"></label>
+                            <h5>first name</h5>
+                        </div>
+                        <div><input type="text" id="fname" name="fname" placeholder="(enter your first name)" required>
+                        </div>
+                        <div><label for="lname"></label>
+                            <h5>last name</h5>
+                        </div>
+                        <div><input type="text" id="lname" name="lname" placeholder="(enter your last name)" required>
+                        </div>
+                        <div><label for="email"></label>
+                            <h5>email</h5>
+                        </div>
+                        <div><input type="email" id="email" name="email" placeholder="(enter your email address)"
+                                required>
+                            <br>
+                        </div>
+                        <div><label for="pass1"></label>
+                            <h5>password</h5>
+                        </div>
+                        <div><input type="password" id="pass1" name="pass1" placeholder="(create a password)" required>
+                        </div>
+                        <div><label for="pass2"></label>
+                            <h5>enter your <br> password again</h5>
+                        </div>
+                        <div><input type="password" id="pass2" name="pass2" placeholder="(confirm your password)"
+                                required>
+                        </div>
+                    </div>
+                    <button type="submit">create account</button>
+                </div>
+            </div>
+            <div class="social">
+                <div class="container">
+                    <div class="flex1">
+                        <div>
+                            <h5 class="icons">signup with google</h5>
+                        </div>
+                        <div><a href="">{% load static %}
+                                <img type="image" src=" {% static 'app/googleicon.png' %}" width="30"></a>
+                        </div>
+                    </div>
+                    <div class="flex2">
+                        <div>
+                            <h5 class="icons">already have an account?</h5>
+                        </div>
+                        <div>
+                            <button><a href="/signin" style="text-decoration: none; color: black;">login
+                                    here</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     <footer>
         <div class="end">

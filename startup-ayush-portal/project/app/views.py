@@ -5,7 +5,6 @@ from django.contrib.auth import authenticate, login
 
 def index(request):
     return render(request, 'app/index.html')
-
 def signup(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -36,7 +35,7 @@ def signin(request):
         if user is not None:
             login(request, user)
             fname = user.first_name
-            return render(request, 'app/index.html', {'fname': fname})
+            return render(request, 'app/home.html', {'fname': fname})
 
         else:
             messages.error(request, "Bad Credentials!")

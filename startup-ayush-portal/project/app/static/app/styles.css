@@ -4,6 +4,10 @@ body {
 
 }
 
+.text-center {
+    text-align: center;
+
+}
 .header-top {
     background-color: white;
     position: relative;
@@ -245,6 +249,10 @@ body {
     /* Allows sections to wrap into the next line on smaller screens */
 }
 
+
+
+
+
 /* about page */
 .about-section {
     margin-top: 3rem;
@@ -303,3 +311,149 @@ body {
     color : white;
 }
 
+
+
+
+
+
+/* SignUp Page */
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-container > h1 {
+    margin: 3rem;
+}
+.signup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    gap: 1rem;
+}
+
+.signup > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.signup-border {
+    border: 1px solid #181818;
+    border-radius: 2rem;
+    padding: 5rem 5rem 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.signup-border > button {
+    border-radius: 0.3rem;
+    border: 0.3px solid #181818;
+    background-color: white;
+}
+.signup-border> button:hover {
+    background-color: #f4f4f4;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    width: auto;
+}
+
+.social {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.signup-header-bottom {
+    padding-bottom: 2rem;
+    /* border-bottom: 0.1rem solid black; */
+    background-color: #f4f4f4;
+}
+
+#signup-header {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+#signup-header-top {
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.social > .container > .flex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social > .container > .flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social > .container > .flex2 > div >button {
+    border-radius: 0.3rem;
+    border: 0.5px solid #181818;
+    background-color: white;
+
+}
+
+.social > .container > .flex2 > div> button:hover {
+    background-color: #f4f4f4;
+}
+
+
+
+/* login-page */
+.login-container {
+    margin-top:3rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-border{
+    border: 1px solid #181818;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+#login-button {
+    border-radius: 0.3rem;
+    border: 0.3px solid #181818;
+    background-color: white;
+}
+
+#login-button:hover {
+    background-color: #f4f4f4;
+}
+
+.login-signup {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}

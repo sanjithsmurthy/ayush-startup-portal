@@ -40,10 +40,9 @@
                         alt="Indian Ministry Of Industry and Commerece">
                 </div>
                 <div class="links">
-                    <a href="/home">Home</a>
+                    <a href="/">Home</a>
                     <a href="/about">About</a>
                     <a href="/contact">Contact</a>
-                    <a href="/signup">Login</a>
                 </div>
                 <div class="logos">
                     {% load static %}
@@ -58,25 +57,33 @@
             </div>
         </div>
     </header>
-    <div class="errors">
-        {% for message in messages %}
-        <div>{{ message }}</div>
-        {% endfor %}
+    <div class="login-container">
+        <h1>Sign In</h1>
+        <div class="login-border">
+            <form action="/signin/" method="post">
+                {% csrf_token %}
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <br><br>
+                
+                <div class="errors" style="display: flex;justify-content: center;">
+                    {% for message in messages %}
+                    <div>{{ message }}</div>
+                    {% endfor %}
+                </div>
+                <br>
+                <div style="display: flex;justify-content: center;"><button type="submit" id="login-button">Sign In</button></div>
+            </form>
+        </div>
+    </div>
+    <div class="login-signup">
+        <h5 class="icons">already have an account?</h5>
+        <button id="login-button"><a href="/signup" style="text-decoration: none; color: black;">signup here</a></button>
     </div>
 
-    <form action="/signin/" method="post">
-        {% csrf_token %}
-
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username" required>
-        <br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-        <br><br>
-
-        <button type="submit">Sign In</button>
-    </form>
     <footer>
         <div class="end">
             {% load static %}

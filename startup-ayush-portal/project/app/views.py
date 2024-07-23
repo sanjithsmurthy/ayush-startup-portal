@@ -48,6 +48,11 @@ def signin(request):
 def signout(request):
     pass
 
+def about(request):
+    return render(request,'app/about.html')
 
+def home(request):
+    return render(request,'app/home.html')
 
-
+def contact(request):
+    return render(request,'app/contact.html')

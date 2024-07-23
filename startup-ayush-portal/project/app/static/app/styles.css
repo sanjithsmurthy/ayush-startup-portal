@@ -5,7 +5,7 @@ body {
 }
 .header-top {
     background-color: white;
-    padding: 0.5rem 0;
+ /*   padding: 0.5rem 0;*/
     position: relative;
 }
 .carousel-inner {
@@ -26,6 +26,8 @@ body {
     position: absolute;
     z-index: 2;
     left:90rem;
+    overflow: hidden;
+    max-width: 6rem;
     bottom: 0.5rem;
     overflow: hidden;
     max-width: 3rem;
@@ -46,6 +48,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .head {
     display: flex;
     justify-content: space-around;
@@ -141,11 +144,64 @@ body {
 }
 
 .highlight {
-    background-color: #f4f4f4;
+    background-color: rgb(244, 244, 244);
     border-left: 0px;
     border-right: 0px;
 }
 
+.problem-statement{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:rgb(249, 249, 249);
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.problem-statement >div{
+    border-top: 2px solid #ebecee;
+    
+}
+.color-h6-problem-statement{
+    color:rgb(108, 100, 100);
+    font-weight: normal;
+}
+.color-h5-problem-statement{
+    color:#464995;
+    margin:20px 0 20px 0;
+    font-weight: normal;
+}
+.incentives-main{
+    display:flex;
+    flex-wrap: wrap;
+}
+.incentives-heading1{
+   
+    background: url(./fiscal.png) no-repeat;
+    background-size: contain;
+    padding-left: 3.5rem;
+   
+}
+.incentives-heading2{
+   
+    background: url(./nonfiscel.png) no-repeat;
+    background-size: contain;
+    padding-left: 3.5rem;
+   
+}
+.incentives-section{
+    width: 50%;
+    padding-left: 55px;
+    box-sizing: border-box;
+}
+
+.incentives-content{
+    background-color: rgb(249, 249, 249);
+    padding: 10px 15px;
+    margin: 1.5rem 0rem 0rem 3rem;
+    color:rgb(108, 100, 100);
+}
 /* #follow-section {
     width: 5.875rem;
     height: 1.5rem;
@@ -178,4 +234,9 @@ body {
     justify-content: space-between; /* Adjusts spacing between sections */
     align-items: center; /* Vertically aligns sections if they have different heights */
     flex-wrap:nowrap; /* Allows sections to wrap into the next line on smaller screens */
+}
+
+/* content section */
+.about-section{
+    margin-top:40rem;
 }

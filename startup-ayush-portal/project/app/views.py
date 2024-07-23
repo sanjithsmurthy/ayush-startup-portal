@@ -48,3 +48,5 @@ def signin(request):
 def signout(request):
     pass
 
+def about(request):
+    return render(request,'app/about.html')

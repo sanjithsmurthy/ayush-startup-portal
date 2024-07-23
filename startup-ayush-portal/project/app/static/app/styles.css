@@ -5,7 +5,7 @@ body {
 }
 .header-top {
     background-color: white;
-    padding: 0.5rem 0;
+ /*   padding: 0.5rem 0;*/
     position: relative;
 }
 .carousel-inner {
@@ -26,6 +26,8 @@ body {
     position: absolute;
     z-index: 2;
     left:90rem;
+    overflow: hidden;
+    max-width: 6rem;
     bottom: 0.5rem;
 }
 
@@ -44,6 +46,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .head {
     display: flex;
     justify-content: space-around;
@@ -142,6 +145,22 @@ body {
     background-color: #f4f4f4;
     border-left: 0px;
     border-right: 0px;
+}
+
+.problem-statement{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.problem-statement >div{
+    border-top: 2px solid #ebecee;
+}
+.color-h5-problem-statement{
+    color:#464995;
+    margin:20px 0 20px 0;
 }
 
 /* #follow-section {

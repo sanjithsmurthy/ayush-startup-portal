@@ -170,7 +170,36 @@ body {
     margin:20px 0 20px 0;
     font-weight: normal;
 }
+.incentives-main{
+    display:flex;
+    flex-wrap: wrap;
+}
+.incentives-heading1{
+   
+    background: url(./fiscal.png) no-repeat;
+    background-size: contain;
+    padding-left: 3.5rem;
+   
+}
+.incentives-heading2{
+   
+    background: url(./nonfiscel.png) no-repeat;
+    background-size: contain;
+    padding-left: 3.5rem;
+   
+}
+.incentives-section{
+    width: 50%;
+    padding-left: 55px;
+    box-sizing: border-box;
+}
 
+.incentives-content{
+    background-color: rgb(249, 249, 249);
+    padding: 10px 15px;
+    margin: 1.5rem 0rem 0rem 3rem;
+    color:rgb(108, 100, 100);
+}
 /* #follow-section {
     width: 5.875rem;
     height: 1.5rem;

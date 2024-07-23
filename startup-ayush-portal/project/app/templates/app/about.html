@@ -70,8 +70,59 @@
         </div>
     </header>
     {% load static %}
-                <div class="about-section">
-                    <img src="{% static 'app/about-main.jpeg' %}" class="d-block w-100" alt="...">
-                </div>
-    </body>
-    </html>
+    <div class="about-section">
+        <img src="{% static 'app/about-main.jpeg' %}" class="d-block w-100" alt="...">
+        <div class="inner-banner">
+            <h1>About Startup India</h1>
+            <h5>
+                <br>
+                Startup India is a flagship initiative of the Government of <br>
+                India, intended to catalyse startup culture and build a <br>
+                strong and inclusive ecosystem for innovation and <br>
+                entrepreneurship in India.
+            </h5>
+        </div>
+
+        <div class="what-is-startup-india">
+            <h1>What is the Startup India Initiative ?</h1>
+            <h6>
+                <br>
+                Launched on 16th January, 2016, the Startup India Initiative has rolled out several programs with the
+                objective of supporting entrepreneurs, building a robust <br>
+                startup ecosystem and transforming India into a
+                country of job creators instead of job seekers. These programs are managed by a dedicated Startup India
+                <br>
+                Team, which reports to The Department for Promotion of Industry and Internal Trade (DPIIT) <br><br>
+
+
+                The broad scope of Startup India’s programs is outlined in the Action Plan below.
+                <br>
+            </h6>
+        </div>
+
+        <div class="about-startup-india">
+            {% load static %}
+            <img src="{% static 'app/about-main1.png' %}" alt="">
+            <div class="about-startup-india-content">
+            <h1>About Startup Hub</h1>
+            <h5><br> India's largest online entrepreneurship platform allows <br> startups to network, access free tools
+                & resources and <br> participate in programs & challenges. </h5>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="end">
+            {% load static %}
+            <img src="{%static 'app/startupIndia footer.png'%}" alt="StartUp India" title="startup_india">
+            <div>
+                © 2024 Startup India. All Rights Reserved.
+            </div>
+            {% load static %}
+            <img src="{%static 'app/Gov of IND.png'%}" alt="Govt Of India">
+        </div>
+    </footer>
+</body>
+
+</html>

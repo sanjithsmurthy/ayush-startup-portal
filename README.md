@@ -38,3 +38,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 5. Start the development server
     python manage.py runserver
+
+6. Open your browser and go to http://127.0.0.1:8000/ to view the application.
+
+# Usage
+After installation, you can use the StartupAyush Portal to:
+<ul>
+<li>Register a new user account.</li>
+<li>Log in and customize your user profile.</li>
+<li>Access and contribute to the resource library.</li>
+<li>Connect with the startup community.</li>
+<li>Keep track of upcoming events and workshops.</li>
+</ul>

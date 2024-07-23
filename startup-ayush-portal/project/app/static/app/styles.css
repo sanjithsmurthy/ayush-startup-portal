@@ -142,7 +142,7 @@ body {
 }
 
 .highlight {
-    background-color: #f4f4f4;
+    background-color: rgb(244, 244, 244);
     border-left: 0px;
     border-right: 0px;
 }
@@ -153,14 +153,22 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    background-color:rgb(249, 249, 249);
+    padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
 .problem-statement >div{
     border-top: 2px solid #ebecee;
+    
+}
+.color-h6-problem-statement{
+    color:rgb(108, 100, 100);
+    font-weight: normal;
 }
 .color-h5-problem-statement{
     color:#464995;
     margin:20px 0 20px 0;
+    font-weight: normal;
 }
 
 /* #follow-section {

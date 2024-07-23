@@ -27,6 +27,8 @@ body {
     z-index: 2;
     left:90rem;
     bottom: 0.5rem;
+    overflow: hidden;
+    max-width: 3rem;
 }
 
 /* .chakra {

@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'app/signupstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'app/styles.css' %}">
 </head>
+
 <body>
+    <header>
+        <!-- header top -->
+        <div class="header-top">
+            <div class="head">
+                <div class="logos">
+                    {% load static %}
+                    <img src="{% static 'app/Ministry-of-AYUSH.png' %}" id="image-size-1" alt="Government of India">
+                    <img src="{% static 'app/ayush.png' %}" id="image-size-2"
+                        alt="Indian Ministry Of Industry and Commerece">
+                </div>
+                <div class="links">
+                    <a href="/home">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/signup">Login</a>
+                </div>
+                <div class="logos">
+                    {% load static %}
+                    <img src="{% static 'app/startup_india.png' %}" alt="Startup India">
+                    <img src="{% static 'app/azadi_ka_amrit_mahotsav.png' %}" alt="MSME">
+
+                </div>
+            </div>
+            <div class="gear_size">
+                {% load static %}
+                <img src="{% static 'app/Gear_2.gif' %}" alt="gears">
+            </div>
+        </div>
+    </header>
     <form action="/signup/" method="post">
         {% csrf_token %}
         <label for="username"></label>
@@ -31,7 +62,8 @@
         <br><br>
 
         <label for="pass2"></label>
-        ENTER YOUR PASSWORD AGAIN <input type="password" id="pass2" name="pass2" placeholder="(Confirm your password)" required>
+        ENTER YOUR PASSWORD AGAIN <input type="password" id="pass2" name="pass2" placeholder="(Confirm your password)"
+            required>
         <br><br>
 
         <button type="submit">CREATE ACCOUNT</button>
@@ -39,10 +71,23 @@
     </form>
     <div class="social">
         <h4 class="icons">Signup With Your Social Accounts</h4>
-       <a href="">
-        {% load static %} <img type="image" src=" {% static 'app/googleicon.png' %}" width="30"></a>
-         
-        <h5 class="icons">Already have an account?</h5><h3><a href="/signin">Login here</a></h3>
+        <a href="">
+            {% load static %} <img type="image" src=" {% static 'app/googleicon.png' %}" width="30"></a>
+
+        <h5 class="icons">Already have an account?</h5>
+        <h3><a href="/signin">Login here</a></h3>
     </div>
+    <footer>
+        <div class="end">
+            {% load static %}
+            <img src="{%static 'app/startupIndia footer.png'%}" alt="StartUp India" title="startup_india">
+            <div>
+                © 2024 Startup India. All Rights Reserved.
+            </div>
+            {% load static %}
+            <img src="{%static 'app/Gov of IND.png'%}" alt="Govt Of India">
+        </div>
+    </footer>
 </body>
+
 </html>

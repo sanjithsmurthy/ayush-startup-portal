@@ -1,31 +1,34 @@
 body {
     font-family: Montserrat !important;
-    margin:0;
+    margin: 0;
 
 }
+
 .header-top {
     background-color: white;
- /*   padding: 0.5rem 0;*/
     position: relative;
 }
+
 .carousel-inner {
     position: relative;
     width: 100%;
     overflow: hidden;
     margin-top: 1.5rem;
 }
+
 #image-size-1 {
-    width:7rem;
-    height:3rem;
+    width: 7rem;
+    height: 3rem;
 }
+
 #image-size-2 {
-    height:3rem;
+    height: 3rem;
 }
 
 .gear_size {
     position: absolute;
     z-index: 2;
-    left:90rem;
+    left: 90rem;
     overflow: hidden;
     max-width: 6rem;
     bottom: 0.5rem;
@@ -44,7 +47,7 @@ body {
 
 .container {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -63,16 +66,19 @@ body {
     align-items: center;
     gap: 1.5rem;
 }
+
 .links>a:hover {
     color: #009470;
-    
+
 }
+
 .links>a {
     color: black;
     font-size: 1.2rem;
-    text-decoration:dashed;
-    font-weight:550;
+    text-decoration: dashed;
+    font-weight: 550;
 }
+
 .logos {
     display: flex;
     justify-content: space-evenly;
@@ -82,10 +88,10 @@ body {
 
 .intro_pro {
     margin: 1.563rem 3.125rem 0 3.125rem;
-    padding: 3.125rem 6.25rem 0 6.25rem;        
+    padding: 3.125rem 6.25rem 0 6.25rem;
 }
 
-.releStake  {    
+.releStake {
     display: flex;
     list-style: none;
     align-items: center;
@@ -122,18 +128,18 @@ body {
     flex: 0 0 25%;
 }
 
-.Stake_Industry{
+.Stake_Industry {
     margin: 0 0 5rem 0;
 }
 
 .themes-for-challenges {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-content: center;
     margin: 2rem 0;
 }
 
-.themes-for-challenges > div {
+.themes-for-challenges>div {
     height: auto;
     width: 20rem;
     border: 1px solid #ccc;
@@ -149,76 +155,75 @@ body {
     border-right: 0px;
 }
 
-.problem-statement{
-    display:flex;
+.problem-statement {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color:rgb(249, 249, 249);
+    background-color: rgb(249, 249, 249);
     padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
-.problem-statement >div{
+.problem-statement>div {
     border-top: 2px solid #ebecee;
-    
-}
-.color-h6-problem-statement{
-    color:rgb(108, 100, 100);
-    font-weight: normal;
-}
-.color-h5-problem-statement{
-    color:#464995;
-    margin:20px 0 20px 0;
-    font-weight: normal;
-}
-.incentives-main{
-    display:flex;
-    flex-wrap: wrap;
-}
-.incentives-heading1{
-   
-    background: url(./fiscal.png) no-repeat;
-    background-size: contain;
-    padding-left: 3.5rem;
-   
-}
-.incentives-heading2{
-   
-    background: url(./nonfiscel.png) no-repeat;
-    background-size: contain;
-    padding-left: 3.5rem;
-   
-}
-.incentives-section{
-    width: 50%;
-    padding-left: 55px;
-    box-sizing: border-box;
+
 }
 
-.incentives-content{
-    background-color: rgb(249, 249, 249);
-    padding: 10px 15px;
-    margin: 1.5rem 0rem 0rem 3rem;
-    color:rgb(108, 100, 100);
+.color-h6-problem-statement {
+    color: rgb(108, 100, 100);
+    font-weight: normal;
 }
+
+.color-h5-problem-statement {
+    color: #464995;
+    margin: 20px 0 20px 0;
+    font-weight: normal;
+}
+
+.incentives {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.contact-the-host>.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.partners>.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* justify-content: center; */
+    gap: 6rem;
+}
+
+.partner-image {
+    max-width: 240px;
+    max-height: 100px;
+}
+
 /* #follow-section {
     width: 5.875rem;
     height: 1.5rem;
 } */
-#follow-section-2 {
+/* #follow-section-2 {
     width:auto;
     height:auto;
 }
 .follow-icon {
     padding-left:0.001 rem;
     padding-right:0.001 rem;
-}
+} */
 .header-bottom {
     background-color: #181818;
 }
 
-.end{
+.end {
     background-color: black;
     color: white;
     display: flex;
@@ -229,14 +234,72 @@ body {
     margin-top: 5rem;
 }
 
-.option{
-    display: flex; /* Enables Flexbox */
-    justify-content: space-between; /* Adjusts spacing between sections */
-    align-items: center; /* Vertically aligns sections if they have different heights */
-    flex-wrap:nowrap; /* Allows sections to wrap into the next line on smaller screens */
+.option {
+    display: flex;
+    /* Enables Flexbox */
+    justify-content: space-between;
+    /* Adjusts spacing between sections */
+    align-items: center;
+    /* Vertically aligns sections if they have different heights */
+    flex-wrap: nowrap;
+    /* Allows sections to wrap into the next line on smaller screens */
 }
 
-/* content section */
-.about-section{
-    margin-top:3rem;
+/* about page */
+.about-section {
+    margin-top: 3rem;
+    position:relative
 }
+
+.inner-banner {
+    top: 8rem;
+    left: 5rem;
+    max-width: 74.8%;
+    position: absolute;
+
+}
+
+.inner-banner > h1 {
+    color: white;
+}
+
+.inner-banner > h5 {
+    color : white;
+}
+
+.what-is-startup-india {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.what-is-startup-india > h6 {
+    text-align: center;
+}
+
+.about-startup-india {
+    position: relative;
+}
+
+.about-startup-india > img {
+    width: 100%;
+    position: relative;
+}
+
+.about-startup-india-content {
+    position: absolute;
+    bottom: 12rem;
+    left: 5rem;
+    max-width: 74.8%;
+}
+.about-startup-india-content > h1 {
+    color: white;
+}
+
+.about-startup-india-content > h5 {
+    color : white;
+}
+

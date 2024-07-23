@@ -98,17 +98,17 @@
             </button>
         </div>
     </div>
-    <section class="section3">
-        <div class='links'>
-            <a>About-Ayush</a>
-            <a>Startup-Directory</a>
-            <a>Investor-Matching</a>
-            <a>Incubator&Accelerator</a>
-            <a>Mentorship&Networking</a>
-            <a>Collaboration&Forums</a>
-            <a>News&Updates</a>
+    <!-- <section class="section3">
+        <div class='links' >
+        <a >About-Ayush</a>
+        <a>Startup-Directory</a>
+        <a>Investor-Matching</a>
+        <a>Incubator&Accelerator</a>
+        <a>Mentorship&Networking</a>
+        <a>Collaboration&Forums</a>
+        <a>News&Updates</a>   
         </div>
-    </section>
+    </section> -->
     <!--Content-->
     <div class="intro_pro">
         <h1>Ayush Startup Challenge</h1><br>
@@ -133,7 +133,6 @@
             (If selected, they will be required to register a legal entity before any cash prize/grant can be rewarded
             to them)<br>
         </p>
-
         <div class="Stake_Industry">
             <h5 class="margin-between">RELEVANT STAKEHOLDERS</h5>
             <ul class="releStake">
@@ -224,6 +223,7 @@
             <div>
                 <h5 class="color-h5-problem-statement">Food Innovations in Ayush Sector –
                     Ready to Eat Nutritious Ayurveda Ahara (Food)</h5>
+                
                 <h6 class="color-h6-problem-statement">In this era of Pandemic - The population at large is striving to
                     consume more nutritious food, with
                     less
@@ -249,10 +249,12 @@
                     Innovation in instrumentation for analysis and quality control of Ayurvedic drugs etc.</h6><br>
             </div>
             <div>
+                
                 <h5 class="color-h5-problem-statement">Ayush IT Solutions in the areas of Artificial Intelligence (AI)
                     based solutions in Ayurveda
                     Diagnostics,
                     Virtual reality, Biosensors & Trackers</h5>
+                
                 <h6 class="color-h6-problem-statement">Innovations in Information technologies (i.e. ITs) have the
                     capacity, more than any other medium, to
                     facilitate various stakeholders of Ayush Sector.
@@ -265,45 +267,82 @@
                     for
                     raw drug consumption in pharmaceutical industry with linkages etc.
                 </h6><br>
+                    raw drug consumption in pharmaceutical industry with linkages etc.
+                </h6><br>
             </div>
 
-        </div><br><br>
-        <!-- Incentives -->
-        <h2>Incentives</h2><br>
-        <div class="incentives-main">
-
-            <div class="incentives-section">
-                <div class="incentives-heading1">
-                    <h4>Fiscal Incentives</h4>
+        </div>
+        <h2 class="margin-between">INCENTIVES</h2>
+        <div class="incentives">
+            <div>
+                {% load static %}
+                <img src="{% static 'app/incentive-fiscal.png' %}" alt="Fiscal Incentives">
+            </div>
+            <div>
+                <h6>Fiscal Incentives</h6>
+                <p>2 prizes in each sector (i.e., a total of 6 prizes)</p>
+                <p>- INR 1,00,000 (1st Prize)</p>
+                <p>- INR 50,000 (2nd Prize)</p>
+            </div>
+            <div>
+                {% load static %}
+                <img src="{% static 'app/nonfiscel.png' %}" alt="Non Fiscal Incentives">
+            </div>
+            <div>
+                <h6>Non Fiscal Incentives</h6>
+                <p>Incubation support at All India Institute of Ayurveda (AIIA) and/or</p>
+                <p>All India Institute of Ayurveda (AIIA) Incubation Partners (Perio</p>
+                <p>will depend on feasibility of the idea and will be determined on </p>
+                <p>case-to-case basis)</p>
+            </div>
+        </div>
+        <div class="procedure-post-submission margin-between">
+            <h2 class="margin-between">Procedure Post Submission</h2>
+            <p>Evaluation of startups to be undertaken once applications are closed.</p>
+        </div>
+        <div class="contact-the-host margin-between">
+            <h2>Contact the Host</h2>
+            <div class="container margin-between">
+                <div>
+                    <h6>ORGANIZATION NAME</h6>
+                    <p>StartUp India</p>
                 </div>
-                <div class="incentives-content">
-                    <h6>2 prizes in each sector (i.e., a total of 6 prizes)<br>
-
-                        - INR 1,00,000 (1st Prize)<br>
-
-                        - INR 50,000 (2nd Prize)</h6>
+                <div>
+                    <h6>PERSON IN CHARGE</h6>
+                    <p>Sana Dewan</p>
+                </div>
+                <div>
+                    <h6>DESIGNATION</h6>
+                    <p>Assistant Manager</p>
+                </div>
+                <div>
+                    <h6>SUPPORT EMAIL ID</h6>
+                    <p>dipp-startups@nic.in</p>
                 </div>
             </div>
-            <div class="incentives-section">
-                <div class="incentives-heading2">
-                    <h4>Non-Fiscal Incentives</h4>
+        </div>
+        <div class="partners margin-between">
+            <h2 class="margin-between">Partners</h2>
+            <div class="container">
+                <div >
+                    {% load static %}
+                    <img src="{% static 'app/logo.png' %}" alt="Ministry of Ayush" class="partner-image">
                 </div>
-                <div class="incentives-content">
-                    <h6>Incubation support at All India Institute of Ayurveda (AIIA) and/or All India Institute of
-                        Ayurveda (AIIA) Incubation Partners (Period will depend on feasibility of the idea and will be
-                        determined on a case-to-case basis).</h6>
+                <div >
+                    {% load static %}
+                    <img src="{% static 'app/logo2.png' %}" alt="Ministry of Ayush" class="partner-image">
+                </div>
+                <div >
+                    {% load static %}
+                    <img src="{% static 'app/logo3.png' %}" alt="Ministry of Ayush" class="partner-image">
+                </div>
+                <div >
+                    {% load static %}
+                    <img src="{% static 'app/logo4.png' %}" alt="Ministry of Ayush" class="partner-image">
                 </div>
             </div>
-        </div><br>
-        <!-- Procedure Post Submission -->
-        <h2>Procedure Post Submission</h2><br>
-        <p>Evaluation of startups to be undertaken once applications are closed.<p><br>
 
-        <!-- Contact the Host -->
-         <h2>
-            Contact the Host
-         </h2>
-
+        </div>
     </div>
 
 

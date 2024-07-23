@@ -233,3 +233,8 @@ body {
     align-items: center; /* Vertically aligns sections if they have different heights */
     flex-wrap:nowrap; /* Allows sections to wrap into the next line on smaller screens */
 }
+
+/* content section */
+.about-section{
+    margin-top:40rem;
+}

@@ -28,6 +28,8 @@ body {
     overflow: hidden;
     max-width: 6rem;
     bottom: 0.5rem;
+    overflow: hidden;
+    max-width: 3rem;
 }
 
 /* .chakra {
@@ -228,4 +230,9 @@ body {
     justify-content: space-between; /* Adjusts spacing between sections */
     align-items: center; /* Vertically aligns sections if they have different heights */
     flex-wrap:nowrap; /* Allows sections to wrap into the next line on smaller screens */
+}
+
+/* content section */
+.about-section{
+    margin-top:3rem;
 }

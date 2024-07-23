@@ -110,9 +110,31 @@ body {
     flex: 0 0 25%;
 }
 
-.Stake_Industry{
+/* .Stake_Industry{
     margin: 1.563rem 3.125rem 0 3.125rem;
     padding: 3.125rem 6.25rem 0 6.25rem
+} */
+
+.themes-for-challenges {
+    display: flex;
+    justify-content:flex-start;
+    align-content: center;
+}
+
+.themes-for-challenges > div {
+    height: auto;
+    width: 20rem;
+    border: 1px solid #ccc;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight {
+    background-color: #f4f4f4;
+    border-left: 0px;
+    border-right: 0px;
 }
 
 /* #follow-section {

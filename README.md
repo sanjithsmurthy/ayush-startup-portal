@@ -50,3 +50,8 @@ After installation, you can use the StartupAyush Portal to:
 <li>Connect with the startup community.</li>
 <li>Keep track of upcoming events and workshops.</li>
 </ul>
+
+# License
+Distributed under the MIT License. See LICENSE for more information.
+
+Thank you for visiting the StartupAyush Portal!

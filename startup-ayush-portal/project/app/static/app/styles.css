@@ -86,6 +86,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* margin:1rem 0; */
 }
 
 .releStake>li {
@@ -101,6 +102,12 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    /* margin: 1rem 0; */
+}
+
+.margin-between {
+    margin: 2rem 0;
+
 }
 
 .releInd>li {
@@ -110,15 +117,15 @@ body {
     flex: 0 0 25%;
 }
 
-/* .Stake_Industry{
-    margin: 1.563rem 3.125rem 0 3.125rem;
-    padding: 3.125rem 6.25rem 0 6.25rem
-} */
+.Stake_Industry{
+    margin: 0 0 5rem 0;
+}
 
 .themes-for-challenges {
     display: flex;
     justify-content:flex-start;
     align-content: center;
+    margin: 2rem 0;
 }
 
 .themes-for-challenges > div {
@@ -151,4 +158,15 @@ body {
 }
 .header-bottom {
     background-color: #181818;
+}
+
+.end{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.25rem;
+    font-size: 0.875rem;
+    align-items: center;
+    margin-top: 5rem;
 }

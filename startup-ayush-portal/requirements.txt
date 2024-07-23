@@ -1,2 +1,10 @@
 django
 django-allauth
+requests
+PyJWT
+cryptography
+
+createsuperuser:
+username:superuser
+password:SJBIT@123
+email:legendu287@gmail.com

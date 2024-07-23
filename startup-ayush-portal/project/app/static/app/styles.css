@@ -189,3 +189,10 @@ body {
     align-items: center;
     margin-top: 5rem;
 }
+
+.option{
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Adjusts spacing between sections */
+    align-items: center; /* Vertically aligns sections if they have different heights */
+    flex-wrap:nowrap; /* Allows sections to wrap into the next line on smaller screens */
+}

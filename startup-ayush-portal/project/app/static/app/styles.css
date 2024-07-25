@@ -4,6 +4,7 @@ body {
 
 }
 
+
 .text-center {
     text-align: center;
 
@@ -192,6 +193,7 @@ body {
     margin: 2rem 0;
 }
 
+
 .contact-the-host>.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -209,7 +211,9 @@ body {
 .partner-image {
     max-width: 240px;
     max-height: 100px;
+    
 }
+
 
 /* #follow-section {
     width: 5.875rem;

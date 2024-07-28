@@ -4,6 +4,7 @@ body {
 
 }
 
+
 .text-center {
     text-align: center;
 
@@ -192,6 +193,7 @@ body {
     margin: 2rem 0;
 }
 
+
 .contact-the-host>.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -209,7 +211,9 @@ body {
 .partner-image {
     max-width: 240px;
     max-height: 100px;
+    
 }
+
 
 /* #follow-section {
     width: 5.875rem;
@@ -446,7 +450,7 @@ body {
 }
 
 #login-button:hover {
-    background-color: #f4f4f4;
+    background-color: black;
 }
 
 .login-signup {
@@ -456,4 +460,13 @@ body {
     align-items: center;
     gap: 1rem;
     flex-direction: column;
+}
+
+.roadroller
+{
+
+    float:right;
+     margin-right:10px;
+     text-align: center;
+     justify-content: center;
 }

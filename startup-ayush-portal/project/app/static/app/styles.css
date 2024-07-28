@@ -479,7 +479,7 @@ body {
 }
 
 #login-button:hover {
-    background-color: black;
+    background-color: rgb(236, 233, 233);
 }
 
 .login-signup {

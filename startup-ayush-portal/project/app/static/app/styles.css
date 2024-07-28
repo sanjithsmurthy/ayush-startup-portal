@@ -242,16 +242,7 @@ body {
     margin-top: 5rem;
 }
 
-.option {
-    display: flex;
-    /* Enables Flexbox */
-    justify-content: space-between;
-    /* Adjusts spacing between sections */
-    align-items: center;
-    /* Vertically aligns sections if they have different heights */
-    flex-wrap: nowrap;
-    /* Allows sections to wrap into the next line on smaller screens */
-}
+
 
 
 
@@ -315,8 +306,46 @@ body {
     color : white;
 }
 
+.ministers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+    /* width: 280px; */
+}
 
+.govt-img > img {
+    width: 250px;
+    height: 250px;
+    border: 10px solid white;
+    border-radius: 10px;
+} 
 
+.govt-img > .info {
+    text-align: center;
+}
+
+.info > p {
+    font-size: 0.8rem;
+    width: 280px;
+    text-align: center;
+    text-wrap:balance;
+}
+
+.info > h6 {
+    margin-top: 20px;
+}
+
+.govt-img {
+    border: 1px solid black;
+    padding: 30px 20px 20px 10px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #3d4097;
+    color: white;
+    font-weight: 500;
+}
 
 
 

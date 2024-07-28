@@ -414,11 +414,11 @@ body {
 .signup-header-bottom {
     padding-bottom: 2rem;
     /* border-bottom: 0.1rem solid black; */
-    background-color: #f4f4f4;
+    background-color:white;
 }
 
 #signup-header {
-    background-color: #f4f4f4;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
@@ -426,7 +426,7 @@ body {
 }
 
 #signup-header-top {
-    background-color: #f4f4f4;
+    background-color: white;
     position: relative;
 }
 

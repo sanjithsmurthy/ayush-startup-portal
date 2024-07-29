@@ -54,7 +54,7 @@
                     <a href="/">Home</a>
                     <a href="/about">About</a>
                     <a href="mailto:directorayush@gmail.com">Contact</a>
-                    <a href="/signup">Login</a>
+                    <a href="/signin">Login</a>
                 </div>
                 <div class="logos">
                     {% load static %}
@@ -69,65 +69,60 @@
             </div>
         </div>
     </header><br><br><br>
-    
+
     <p style="display:inline-block;">
         <img src="{% static 'app/contactimg.jpg' %}" alt="Contact Image" style="float:left;">
-        <span class="roadroller" >
+        <span class="roadroller">
             <i>For any queries or feedback, reach out to us through</i><br><br>
             Contact Us <br>
             or our toll free number <b>1-800-115-565</b>
         </span>
-        
+
     </p>
     </div>
-    <footer align="center">
-       
-        
-    </footer>
-    
-    
-        
-        <footer>
-            
-            <div class="end">
-                <section class="foot2">
-                    <div class="border1">
-                        <div class="values">
-                            <input  class='inputinfooter' type="text" placeholder="Enter your email" >
-                            <button class="Subscribe">Subscribe</button>
-                        </div>
-                        
+    <footer>
+
+        <div class="end">
+            <section class="foot2">
+                <div class="border1">
+                    <div class="values">
+                        <input class='inputinfooter' type="text" placeholder="Enter your email">
+                        <button class="Subscribe">Subscribe</button>
                     </div>
-                    <div class="border2">
-                        <p>Terms of Use</p>
-                        <p>Use Ayush India Logo</p>
-                        <p>Request For Proposal</p>
-                        <p>Blogs</p>
-                    </div>
-            
-                </section>
-                <section class="foot3">
-                    <p>Last Updated:</p><p>
-                        05-SEP-2023 | 06:19 PM</p>
-                        <div class="lastparagraph">
-                            <p>Disclaimer</p>
-                            <p>Privacy Policy</p>
-                            <p>Contact Us</p>
-                            <p>Site map</p>
-                        </div>
-                        
-                </section>
-                <button id="scrollToTopButton">Dashboard</button>
-                {% load static %}
-                <img src="{%static 'app/startupIndia footer.png'%}" alt="StartUp India" title="startup_india">
-                <div>
-                    © 2024 Startup India. All Rights Reserved.
+
                 </div>
-                {% load static %}
-                <img src="{%static 'app/Gov of IND.png'%}" alt="Govt Of India">
+                <div class="border2">
+                    <p>Terms of Use</p>
+                    <p>Use Ayush India Logo</p>
+                    <p>Request For Proposal</p>
+                    <p>Blogs</p>
+                </div>
+
+            </section>
+            <section class="foot3">
+                <p>Last Updated:</p>
+                <p>
+                    05-SEP-2023 | 06:19 PM</p>
+                <div class="lastparagraph">
+                    <p>Disclaimer</p>
+                    <p>Privacy Policy</p>
+                    <p>Contact Us</p>
+                    <p>Site map</p>
+                </div>
+
+            </section>
+            <button id="scrollToTopButton">Dashboard</button>
+            {% load static %}
+            <img src="{%static 'app/startupIndia footer.png'%}" alt="StartUp India" title="startup_india">
+            <div>
+                © 2024 Startup India. All Rights Reserved.
             </div>
-        </footer>
-    
-    
+            {% load static %}
+            <img src="{%static 'app/Gov of IND.png'%}" alt="Govt Of India">
+        </div>
+    </footer>
+
+
 </body>
+
 </html>

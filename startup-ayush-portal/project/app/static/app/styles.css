@@ -4,6 +4,9 @@ body {
 
 }
 
+.white-text {
+    color: white;
+}
 
 .text-center {
     text-align: center;
@@ -60,8 +63,9 @@ body {
 .head {
     display: flex;
     justify-content: space-around;
-    margin-top: 2rem;
-    padding: 0;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: white;
 }
 
@@ -476,10 +480,13 @@ body {
     border-radius: 0.3rem;
     border: 0.3px solid #181818;
     background-color: white;
+    height: 2.5rem;
+    width: 7.5rem;
 }
 
 #login-button:hover {
-    background-color: rgb(236, 233, 233);
+    background-color:#32ba98 ;
+    color: black;
 }
 
 .login-signup {
@@ -495,7 +502,19 @@ body {
 {
 
     float:right;
-     margin-right:10px;
-     text-align: center;
-     justify-content: center;
+    margin-right:10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.primary-bgcolor {
+    background-color: #32ba98;
+}
+
+.primary-color {
+    color: #32ba98;
+}
+
+.padding-top{
+    padding-top: 1rem;
 }

@@ -28,14 +28,14 @@
     <link rel="stylesheet" href="{% static 'app/styles.css' %}">
 </head>
 
-<body class="login-page">
+<body class="login-page primary-bgcolor">
     <header>
         <!-- header top -->
         <div class="header-top">
-            <div class="head">
+            <div class="head padding-top" >
                 <div class="logos">
                     {% load static %}
-                    <img src="{% static 'app/Ministry-of-AYUSH.png' %}" id="image-size-1" alt="Government of India">
+                    <img src="{% static 'app/Ministry-of-AYUSH.png' %}" id="image-size-2" alt="Government of India">
                     <img src="{% static 'app/ayush.png' %}" id="image-size-2"
                         alt="Indian Ministry Of Industry and Commerece">
                 </div>
@@ -51,22 +51,22 @@
 
                 </div>
             </div>
-            <div class="gear_size">
+            <!-- <div class="gear_size primary-bgcolor" >
                 {% load static %}
-                <img src="{% static 'app/Gear_2.gif' %}" alt="gears">
-            </div>
+                <img src="{% static 'app/Gear_2.gif' %}" alt="gears" class="primary-bgcolor">
+            </div> -->
         </div>
     </header>
     <div class="login-container">
-        <h1>Sign In</h1>
+        <h1 class="white-text">Sign In</h1>
         <div class="login-border">
             <form action="/signin/" method="post">
                 {% csrf_token %}
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <label for="username" class="white-text">Username:</label>
+                <input type="text" id="username" name="username" required>
                 <br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <label for="password" class="white-text">Password:</label>
+                <input type="password" id="password" name="password"  required>
                 <br><br>
                 
                 <div class="errors" style="display: flex;justify-content: center;">
@@ -75,16 +75,15 @@
                     {% endfor %}
                 </div>
                 <br>
-                <div style="display: flex;justify-content: center;"><button type="submit" id="login-button">Sign In</button></div>
+                <div style="display: flex;justify-content: center;"><button type="submit" id="login-button" class="primary-color">Sign In</button></div>
             </form>
         </div>
     </div>
     <div class="login-signup">
-        <h5 class="icons" text-align="center">Don't have an account? <br>
-            Create Your account.<br>
-            Its totally free.
+        <h5 class="icons white-text text-center">
+            Create Your account.
         </h5>
-        <button id="login-button"><a href="/signup" style="text-decoration: none; color: black;" class="btn">signup here</a></button>
+        <button id="login-button"><a href="/signup" style="text-decoration: none;" class="btn primary-color">Sign Up</a></button>
     </div>
 
     <footer>

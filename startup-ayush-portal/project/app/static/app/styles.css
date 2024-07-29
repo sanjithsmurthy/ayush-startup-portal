@@ -4,6 +4,19 @@ body {
 
 }
 
+
+.primary-bgcolor {
+    background-color: #32ba98;
+}
+
+.primary-color {
+    color: #32ba98;
+}
+
+.padding-top {
+    padding-top: 1rem;
+}
+
 .white-text {
     color: white;
 }
@@ -12,6 +25,7 @@ body {
     text-align: center;
 
 }
+
 .header-top {
     background-color: white;
     position: relative;
@@ -215,7 +229,7 @@ body {
 .partner-image {
     max-width: 240px;
     max-height: 100px;
-    
+
 }
 
 
@@ -255,7 +269,7 @@ body {
 /* about page */
 .about-section {
     margin-top: 3rem;
-    position:relative
+    position: relative
 }
 
 .inner-banner {
@@ -266,12 +280,12 @@ body {
 
 }
 
-.inner-banner > h1 {
+.inner-banner>h1 {
     color: white;
 }
 
-.inner-banner > h5 {
-    color : white;
+.inner-banner>h5 {
+    color: white;
 }
 
 .what-is-startup-india {
@@ -283,7 +297,7 @@ body {
     margin-bottom: 5rem;
 }
 
-.what-is-startup-india > h6 {
+.what-is-startup-india>h6 {
     text-align: center;
 }
 
@@ -291,7 +305,7 @@ body {
     position: relative;
 }
 
-.about-startup-india > img {
+.about-startup-india>img {
     width: 100%;
     position: relative;
 }
@@ -302,12 +316,13 @@ body {
     left: 5rem;
     max-width: 74.8%;
 }
-.about-startup-india-content > h1 {
+
+.about-startup-india-content>h1 {
     color: white;
 }
 
-.about-startup-india-content > h5 {
-    color : white;
+.about-startup-india-content>h5 {
+    color: white;
 }
 
 .ministers {
@@ -315,41 +330,45 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
-    margin-top: 5%;
+    padding-top: auto;
     /* width: 280px; */
 }
 
-.govt-img > img {
+.govt-img>img {
     width: 250px;
     height: 250px;
     border: 10px solid white;
     border-radius: 10px;
-} 
+}
 
-.govt-img > .info {
+.govt-img>.info {
     text-align: center;
 }
 
-.info > p {
+.info>p {
     font-size: 0.8rem;
     width: 280px;
     text-align: center;
-    text-wrap:balance;
+    text-wrap: balance;
 }
 
-.info > h6 {
+.info>h6 {
     margin-top: 20px;
 }
 
 .govt-img {
-    border: 1px solid white;
+
     padding: 30px 20px 20px 10px;
     text-align: center;
     border-radius: 30px;
-    background-color: #3d4097;
-    color: white;
     font-weight: 500;
 }
+
+
+
+
+
+
 
 
 
@@ -360,9 +379,10 @@ body {
     flex-direction: column;
 }
 
-.form-container > h1 {
+.form-container>h1 {
     margin: 3rem;
 }
+
 .signup {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -370,7 +390,7 @@ body {
     gap: 1rem;
 }
 
-.signup > div {
+.signup>div {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -378,7 +398,7 @@ body {
     width: 10.313rem;
 }
 
-.custom-signup-size{
+.custom-signup-size {
     width: 10.313rem;
 }
 
@@ -425,7 +445,7 @@ body {
 .signup-header-bottom {
     padding-bottom: 2rem;
     /* border-bottom: 0.1rem solid black; */
-    background-color:white;
+    background-color: white;
 }
 
 #signup-header {
@@ -440,19 +460,20 @@ body {
     position: relative;
 }
 
-.social > .container > .flex1 {
+.social>.container>.flex1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.social > .container > .flex2 {
+.social>.container>.flex2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 /* .social > .container > .flex2 > div >button {
     border-radius: 0.3rem;
     border: 0.5px solid #181818;
@@ -466,9 +487,15 @@ body {
 
 
 
+
+
+
+
+
+
 /* login-page */
 .login-container {
-    margin-top:3rem;
+    margin-top: 3rem;
     gap: 1rem;
     display: flex;
     justify-content: center;
@@ -476,7 +503,7 @@ body {
     align-items: center;
 }
 
-.login-border{
+.login-border {
     border: 1px solid #181818;
     padding: 3rem;
     border-radius: 2rem;
@@ -492,7 +519,7 @@ body {
 }
 
 .login-button:hover {
-    background-color:#32ba98 ;
+    background-color: #32ba98;
     color: black;
     border: 2px solid white;
     border-radius: 0.3rem;
@@ -507,23 +534,122 @@ body {
     flex-direction: column;
 }
 
-.roadroller
-{
 
-    float:right;
-    margin-right:10px;
+
+
+
+
+/* contact page */
+
+.roadroller {
+
+    float: right;
+    margin-right: 10px;
     text-align: center;
     justify-content: center;
 }
 
-.primary-bgcolor {
-    background-color: #32ba98;
+/* .contact-page {
+    background-image: url(contactimg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    min-height: 100vh;
 }
 
-.primary-color {
-    color: #32ba98;
+.contact-box{
+	max-width: 100%;
+	display: grid;
+    border-radius: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #b5ccd1;
+    transition: 0.5s;
 }
 
-.padding-top{
-    padding-top: 1rem;
+.contact-box:hover{
+    box-shadow: 0 0 20px 0px
+}
+.right{
+	padding: 25px 40px;
+}
+
+
+.contact-box > h2 {
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+.contact-box > h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #25a888;
+}
+
+
+.contact-box > .btn {
+	width: 40%;
+	padding: 0.5rem 1rem;
+	background-color: #25a888;
+    border-radius: 3px;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.contact-box > .btn:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.15);
+}
+
+.contact-box > .field:focus{
+    background-color: #fff;
+}
+
+@media screen and (max-width: 768px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+
+.contact-box > .field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.835);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.contact-box > .field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-box > textarea{
+	min-height: 150px;
+} */
+
+.intro-contact {
+    margin: 1.563rem 3.125rem 0 3.125rem;
+    padding: 3.125rem 6.25rem 0 6.25rem;
 }

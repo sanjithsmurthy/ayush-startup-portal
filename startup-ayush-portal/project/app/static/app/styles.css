@@ -375,6 +375,11 @@ body {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    width: 10.313rem;
+}
+
+.custom-signup-size{
+    width: 10.313rem;
 }
 
 .signup-border {
@@ -388,14 +393,16 @@ body {
     gap: 3.5rem;
 }
 
-.signup-border > button {
+/* .signup-border > button {
     border-radius: 0.3rem;
     border: 0.3px solid #181818;
     background-color: white;
-}
-.signup-border> button:hover {
+    height: 2.5rem;
+    width: 7.5rem;
+} */
+/* .signup-border> button:hover {
     background-color: #f4f4f4;
-}
+} */
 
 .signup-container {
     display: flex;
@@ -425,8 +432,7 @@ body {
     background-color: white;
     display: flex;
     justify-content: space-around;
-    margin-top: 2rem;
-    padding: 0;
+    padding: 1.7rem 0 0 0;
 }
 
 #signup-header-top {
@@ -447,16 +453,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-.social > .container > .flex2 > div >button {
+/* .social > .container > .flex2 > div >button {
     border-radius: 0.3rem;
     border: 0.5px solid #181818;
     background-color: white;
 
-}
-
+} */
+/* 
 .social > .container > .flex2 > div> button:hover {
     background-color: #f4f4f4;
-}
+} */
 
 
 
@@ -476,17 +482,20 @@ body {
     border-radius: 2rem;
 }
 
-#login-button {
+.login-button {
     border-radius: 0.3rem;
-    border: 0.3px solid #181818;
+    border: 0.3px solid #32ba98;
     background-color: white;
     height: 2.5rem;
     width: 7.5rem;
+    color: #32ba98;
 }
 
-#login-button:hover {
+.login-button:hover {
     background-color:#32ba98 ;
     color: black;
+    border: 2px solid white;
+    border-radius: 0.3rem;
 }
 
 .login-signup {
